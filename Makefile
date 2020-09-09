@@ -24,7 +24,7 @@ run_wang: $(BUILD_DIR)/run_wang.o $(BUILD_DIR)/wang.o $(BUILD_DIR)/oracle.o
 
 # Tree generator
 
-tree_generator: $(BUILD_DIR)/tree_generator.o
+tree_generator: $(BUILD_DIR)/digital_tree_generator.o
 	$(CXX) $+ -o $(BUILD_DIR)/$@ $(LDFLAGS)
 
 # Tests
